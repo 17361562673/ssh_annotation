@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="erp.model.Emp" table="emp" schema="erp_project">
+        <id name="empId" column="emp_id"/>
+        <property name="depId" column="dep_id"/>
+        <property name="name" column="name"/>
+        <property name="username" column="username"/>
+        <property name="email" column="email"/>
+        <property name="tel" column="tel"/>
+        <property name="gender" column="gender"/>
+        <property name="address" column="address"/>
+        <property name="birthday" column="birthday"/>
+        <property name="password" column="password"/>
+    </class>
+</hibernate-mapping>

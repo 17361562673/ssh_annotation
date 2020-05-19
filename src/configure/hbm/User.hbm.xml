@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="erp.model">
+    <class name="User" table="t_user">
+        <!--对user表开启二级缓存-->
+        <cache usage="read-write"/>
+        <id name="userId" column="user_id">
+            <generator class="native"/>
+        </id>
+        <property name="userName" column="user_name"/>
+        <property name="password"/>
+    </class>
+</hibernate-mapping>
